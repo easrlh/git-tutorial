@@ -1,0 +1,15 @@
+def main():
+    print("Disclaimer: This program is made for those older than 15 years of age and younger than 70.")
+    age = int(input("What is your age? "))
+    poi = int(input("What is the age of your love interest? "))
+
+    youngest = (age/2) + 7
+    oldest = (age-7) * 2
+
+    if (youngest <= poi <= oldest):
+        print("This person is within your appropriate dating range!")
+    elif (poi < youngest):
+        print("This person is too young for you. Look elsewhere!")
+    else:
+        print("This person is too old for you. Look elsewhere!")
+
